@@ -1,0 +1,94 @@
+Last login: Thu Mar  5 17:51:43 on ttys000
+irabadyal@MacBook-Air ~ % cd Desktop 
+irabadyal@MacBook-Air Desktop % cd Sublime
+irabadyal@MacBook-Air Sublime % cd policytracker
+irabadyal@MacBook-Air policytracker % git init
+Initialized empty Git repository in /Users/irabadyal/Desktop/Sublime/policytracker/.git/
+irabadyal@MacBook-Air policytracker % git remote add origin https://github.com/ANON1708/policytracker.git
+irabadyal@MacBook-Air policytracker % touch README.md
+irabadyal@MacBook-Air policytracker % git add .
+irabadyal@MacBook-Air policytracker % git commit -m "Initial commit"
+[main (root-commit) 3c5fd97] Initial commit
+ Committer: Ira Badyal <irabadyal@MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+irabadyal@MacBook-Air policytracker % git branch -M main
+irabadyal@MacBook-Air policytracker % git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 221 bytes | 221.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ANON1708/policytracker.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+irabadyal@MacBook-Air policytracker % mkdir data
+irabadyal@MacBook-Air policytracker % mkdir data/sources
+irabadyal@MacBook-Air policytracker % mkdir services
+irabadyal@MacBook-Air policytracker % mkdir templates
+irabadyal@MacBook-Air policytracker % mkdir static
+irabadyal@MacBook-Air policytracker % mkdir logs
+irabadyal@MacBook-Air policytracker % touch app.py
+irabadyal@MacBook-Air policytracker % touch requirements.txt
+irabadyal@MacBook-Air policytracker % touch services/extractor_web.py
+irabadyal@MacBook-Air policytracker % touch services/extractor_pdf.py
+irabadyal@MacBook-Air policytracker % touch services/summarizer.py
+irabadyal@MacBook-Air policytracker % touch services/update_checker.py
+irabadyal@MacBook-Air policytracker % touch services/storage.py
+irabadyal@MacBook-Air policytracker % touch templates/base.html
+irabadyal@MacBook-Air policytracker % touch templates/dashboard.html
+irabadyal@MacBook-Air policytracker % touch templates/source.html
+irabadyal@MacBook-Air policytracker % touch templates/history.html
+irabadyal@MacBook-Air policytracker % touch static/style.css
+irabadyal@MacBook-Air policytracker % touch logs/errors.log
+irabadyal@MacBook-Air policytracker % git add .
+irabadyal@MacBook-Air policytracker % git commit -m "Project structure created"
+[main cfe96e3] Project structure created
+ Committer: Ira Badyal <irabadyal@MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 13 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 app.py
+ create mode 100644 logs/errors.log
+ create mode 100644 requirements.txt
+ create mode 100644 services/extractor_pdf.py
+ create mode 100644 services/extractor_web.py
+ create mode 100644 services/storage.py
+ create mode 100644 services/summarizer.py
+ create mode 100644 services/update_checker.py
+ create mode 100644 static/style.css
+ create mode 100644 templates/base.html
+ create mode 100644 templates/dashboard.html
+ create mode 100644 templates/history.html
+ create mode 100644 templates/source.html
+irabadyal@MacBook-Air policytracker % git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 677 bytes | 677.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ANON1708/policytracker.git
+   3c5fd97..cfe96e3  main -> main
+irabadyal@MacBook-Air policytracker % 
