@@ -278,4 +278,9 @@ PolicyTracker can support research in:
 * document change detection
 
 ---
+#**Screenshots**
+
+<img width="2808" height="1330" alt="image" src="https://github.com/user-attachments/assets/bd9c93e8-f93d-420c-8456-f5b843ac7bb6" />
+<img width="2744" height="1447" alt="image" src="https://github.com/user-attachments/assets/a5a6119e-57da-41a5-a212-d5b9b29a257a" />
+
 
